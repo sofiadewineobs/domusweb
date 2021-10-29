@@ -1,0 +1,436 @@
+*{ 
+    box-sizing: border-box
+}
+
+.container {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat (10 500px);
+    grid-gap: 5px;
+    gap: 5px;
+    padding: 10px;
+    margin: 5px auto;
+    background-color: rgba(255, 248, 220, 0.445);
+}
+
+    /*overflow: hidden;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+    
+    font-family: 'Italianno', cursive;
+font-family: 'Prata', serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
+font-family: 'Allura', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Noto Serif Display', serif;
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Noto Serif Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Zen Antique Soft', serif;
+
+*/
+
+/* PAGINA INDEX Y CARACT GENERALES*/
+
+.header {
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 25px;
+    text-align: center;
+    text-align: flex-end;
+}
+
+h3{
+    font-size: 20px;
+    text-align:center ;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif
+}
+
+.nav-links  {
+   
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 1;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-style: bold;   
+}
+
+.nav-links :hover{
+    color:rgb(158, 73, 33)
+}
+
+.content {
+    
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2 /3;
+    Display: flex;
+    text-align: justify;
+    font-family: 'Noto Serif Display', serif; 
+    font-size: 12px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.gallery {
+   
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 3/4;
+    background-image: url("img/imgliving.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    align-self:  stretch;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+
+/*
+.gallery .hover{
+   width: 0;
+   background-color: slategrey;
+   height: 100vh;
+   opacity: 0.5;
+   position: absolute;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   transition: .4s all;
+}
+*/
+
+/*.gallery .hover{
+    width: 0;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    height: 10vh;
+    opacity: 0.5;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+}*/
+
+
+.rooms {
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4/5;
+    background-image: url("img/imghabitacionverde.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.areas {
+    
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 4/5;
+    background-image: url("img/imgcomedorb.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.about {
+    
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 5/6;
+    background-image: url("img/imgjardin2.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+button{
+    width: 0%;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 0;
+    align-self: center;
+}
+
+.gallery:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.rooms:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.areas:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.about:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.contact {
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 6/9;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 15px;
+}
+
+.form label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+
+.location {
+   
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 6 / 9;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px; 
+}
+
+.footer{
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 20px;
+    color: black;
+}
+
+/* PAGINA HABITACIONES*/
+
+.habgris{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 3;
+    background-image: url("img/imghabitaciongris.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    align-self:  stretch;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.habgris:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.habverde{
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 4;
+    background-image: url("img/imghabitacionverde.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    align-self:  stretch;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.habverde:hover button{
+    width: 50vh;
+    background-color: rgba(255, 248, 220, 0.445);
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.habcolorada{
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 5;
+    background-image: url("img/habitacionflores.jpg");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    align-self:  stretch;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.habcolorada:hover button{
+    width: 50vh;
+
+    color: black;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    opacity: 0,9;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 8px;
+}
+
+.ubicacion{
+   
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 6;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contacthabitaciones {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 6;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.formhabitaciones label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+
+/* PAGINA CONTACTO*/
+
+.iframe {
+    
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 3;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px; 
+}
+
+.contactcontacto {
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+}
+
+.formcontacto label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+
+/*BREAKPOINTS RESPONSIVE*/
+
+/*Mobile*/
+@media screen and (max-width: 640px){
+    .nav-links{
+        width:80%;
+        position:fixed;
+        display: flex ;
+
+    }
+    
+}
+
+
+/*tablet*/
+@media screen and (min-width: 640px) and (max-width: 1279px){
+    
+}
+
+/*desktop*/
+@media screen and (min-width: 1280px) {
+    
+}
